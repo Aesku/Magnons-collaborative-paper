@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --job-name=NiBr2nscf
+#SBATCH --job-name=cri3
 #SBATCH --nodes=1
 #SBATCH --ntasks=24
 #SBATCH --nodelist=compute02
