@@ -1,0 +1,40 @@
+&control
+   prefix = 'test'
+   pseudo_dir = '../pseudos'
+   verbosity = 'high'
+/&end
+&system
+   assume_isolated = '2D'
+   ecutwfc = 90
+   ibrav = 4
+   celldm(1) = 12.976749
+   celldm(3) = 4.8242588515
+   nat = 8
+   ntyp = 2
+   nspin = 2
+   starting_magnetization(1) = 1
+   starting_magnetization(2) = 0
+   occupations = 'smearing'
+   degauss = 0.005
+/&end
+
+&electrons
+   conv_thr = 1e-13
+   diago_thr_init=5.0e-6
+   diago_full_acc = .true.
+/&end
+
+ATOMIC_SPECIES
+   Cr    51.99          Cr.upf
+   I     126.9          I.upf
+ATOMIC_POSITIONS { crystal }
+  Cr  0.0                   0.0                    0.4997947245457651
+  Cr  0.3333333333333334    0.6666666666666667     0.4997947245457651
+  I   0.3160216666666669    0.9826883333333336     0.5470080790197941
+  I   0.6666666666666669    0.6839783333333334     0.5470080790197941
+  I   0.017311666666666562  0.33333333333333337    0.5470080790197941
+  I   0.017311666666666684  0.6839783333333334     0.45258137007173616
+  I   0.6666666666666669    0.9826883333333336     0.45258137007173616  
+  I   0.3160216666666668    0.33333333333333337    0.45258137007173616 
+K_POINTS { automatic }
+  6 6 1 0 0 0
