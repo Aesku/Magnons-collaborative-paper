@@ -1,6 +1,6 @@
 &control
-   prefix = 'test'
-   pseudo_dir = '../pseudos'
+   prefix = 'cri3'
+   pseudo_dir = '.'
    verbosity = 'high'
 /&end
 &system
