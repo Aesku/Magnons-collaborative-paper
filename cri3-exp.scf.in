@@ -25,8 +25,8 @@
 /&end
 
 ATOMIC_SPECIES
-   Cr    51.99          Cr.upf
-   I     126.9          I.upf
+   Cr    51.99          Cr_Alejandro.upf
+   I     126.9          I_Alejandro.upf
 ATOMIC_POSITIONS { crystal }
   Cr  0.0                   0.0                    0.4997947245457651
   Cr  0.3333333333333334    0.6666666666666667     0.4997947245457651
