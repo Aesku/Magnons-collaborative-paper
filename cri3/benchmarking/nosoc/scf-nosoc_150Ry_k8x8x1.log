@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.0 starts on 18Jan2024 at 15:15:55 
+     Program PWSCF v.7.0 starts on 19Jan2024 at 10:59: 1 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,7 +14,7 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =      12
-     122151 MiB available memory on the printing compute node when the environment starts
+     158390 MiB available memory on the printing compute node when the environment starts
  
      Reading input from cri3-exp-nosoc_150Ry_k8x8x1.scf.in
 
@@ -103,7 +103,7 @@
         Cr           1.000
         I            0.000
 
-      6 Sym. Ops. (no inversion) found ( 3 have fractional translation)
+     12 Sym. Ops., with inversion, found
 
 
                                     s                        frac. trans.
@@ -119,102 +119,177 @@
                   (  0.0000000  0.0000000  1.0000000 )
 
 
-      isym =  2     120 deg rotation - cryst. axis [0,0,1]       
+      isym =  2     180 deg rotation - cart. axis [0,1,0]        
 
- cryst.   s( 2) = (     0          1          0      )
+ cryst.   s( 2) = (    -1          0          0      )
+                  (     1          1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 2) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  3     120 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 3) = (     0          1          0      )
                   (    -1         -1          0      )
                   (     0          0          1      )
 
- cart.    s( 2) = ( -0.5000000 -0.8660254  0.0000000 )
+ cart.    s( 3) = ( -0.5000000 -0.8660254  0.0000000 )
                   (  0.8660254 -0.5000000  0.0000000 )
                   (  0.0000000  0.0000000  1.0000000 )
 
 
-      isym =  3     120 deg rotation - cryst. axis [0,0,-1]      
+      isym =  4     120 deg rotation - cryst. axis [0,0,-1]      
 
- cryst.   s( 3) = (    -1         -1          0      )
+ cryst.   s( 4) = (    -1         -1          0      )
                   (     1          0          0      )
                   (     0          0          1      )
 
- cart.    s( 3) = ( -0.5000000  0.8660254  0.0000000 )
+ cart.    s( 4) = ( -0.5000000  0.8660254  0.0000000 )
                   ( -0.8660254 -0.5000000  0.0000000 )
                   (  0.0000000  0.0000000  1.0000000 )
 
 
-      isym =  4     inv. 180 deg rotation - cart. axis [0,1,0]   
+      isym =  5     180 deg rotation - cryst. axis [1,-1,0]      
 
- cryst.   s( 4) = (     1          0          0      )    f =( -0.3333333 )
-                  (    -1         -1          0      )       (  0.3333333 )
-                  (     0          0          1      )       (  0.0000000 )
+ cryst.   s( 5) = (     0         -1          0      )
+                  (    -1          0          0      )
+                  (     0          0         -1      )
 
- cart.    s( 4) = (  1.0000000  0.0000000  0.0000000 )    f =( -0.5000000 )
-                  (  0.0000000 -1.0000000  0.0000000 )       (  0.2886751 )
-                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
-
-
-      isym =  5     inv. 180 deg rotation - cryst. axis [1,-1,0] 
-
- cryst.   s( 5) = (     0          1          0      )    f =( -0.3333333 )
-                  (     1          0          0      )       (  0.3333333 )
-                  (     0          0          1      )       (  0.0000000 )
-
- cart.    s( 5) = ( -0.5000000  0.8660254  0.0000000 )    f =( -0.5000000 )
-                  (  0.8660254  0.5000000  0.0000000 )       (  0.2886751 )
-                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+ cart.    s( 5) = (  0.5000000 -0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
 
 
-      isym =  6     inv. 180 deg rotation - cryst. axis [2,1,0]  
+      isym =  6     180 deg rotation - cryst. axis [2,1,0]       
 
- cryst.   s( 6) = (    -1         -1          0      )    f =( -0.3333333 )
-                  (     0          1          0      )       (  0.3333333 )
-                  (     0          0          1      )       (  0.0000000 )
+ cryst.   s( 6) = (     1          1          0      )
+                  (     0         -1          0      )
+                  (     0          0         -1      )
 
- cart.    s( 6) = ( -0.5000000 -0.8660254  0.0000000 )    f =( -0.5000000 )
-                  ( -0.8660254  0.5000000  0.0000000 )       (  0.2886751 )
-                  (  0.0000000  0.0000000  1.0000000 )       (  0.0000000 )
+ cart.    s( 6) = (  0.5000000  0.8660254  0.0000000 )
+                  (  0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
 
 
-     point group C_3v (3m)  
-     there are  3 classes
+      isym =  7     inversion                                    
+
+ cryst.   s( 7) = (    -1          0          0      )
+                  (     0         -1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 7) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  8     inv. 180 deg rotation - cart. axis [0,1,0]   
+
+ cryst.   s( 8) = (     1          0          0      )
+                  (    -1         -1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 8) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  9     inv. 120 deg rotation - cryst. axis [0,0,1]  
+
+ cryst.   s( 9) = (     0         -1          0      )
+                  (     1          1          0      )
+                  (     0          0         -1      )
+
+ cart.    s( 9) = (  0.5000000  0.8660254  0.0000000 )
+                  ( -0.8660254  0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym = 10     inv. 120 deg rotation - cryst. axis [0,0,-1] 
+
+ cryst.   s(10) = (     1          1          0      )
+                  (    -1          0          0      )
+                  (     0          0         -1      )
+
+ cart.    s(10) = (  0.5000000 -0.8660254  0.0000000 )
+                  (  0.8660254  0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym = 11     inv. 180 deg rotation - cryst. axis [1,-1,0] 
+
+ cryst.   s(11) = (     0          1          0      )
+                  (     1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s(11) = ( -0.5000000  0.8660254  0.0000000 )
+                  (  0.8660254  0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym = 12     inv. 180 deg rotation - cryst. axis [2,1,0]  
+
+ cryst.   s(12) = (    -1         -1          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s(12) = ( -0.5000000 -0.8660254  0.0000000 )
+                  ( -0.8660254  0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group D_3d (-3m) 
+     there are  6 classes
      the character table:
 
-       E     2C3   3s_v 
-A_1    1.00  1.00  1.00
-A_2    1.00  1.00 -1.00
-E      2.00 -1.00  0.00
+       E     2C3   3C2'  i     2S6   3s_d 
+A_1g   1.00  1.00  1.00  1.00  1.00  1.00
+A_2g   1.00  1.00 -1.00  1.00  1.00 -1.00
+E_g    2.00 -1.00  0.00  2.00 -1.00  0.00
+A_1u   1.00  1.00  1.00 -1.00 -1.00 -1.00
+A_2u   1.00  1.00 -1.00 -1.00 -1.00  1.00
+E_u    2.00 -1.00  0.00 -2.00  1.00  0.00
 
      the symmetry operations in each class and the name of the first element:
 
      E        1
           identity                                               
-     2C3      2    3
+     2C3      3    4
           120 deg rotation - cryst. axis [0,0,1]                 
-     3s_v     4    6    5
+     3C2'     2    6    5
+          180 deg rotation - cart. axis [0,1,0]                  
+     i        7
+          inversion                                              
+     2S6      9   10
+          inv. 120 deg rotation - cryst. axis [0,0,1]            
+     3s_d     8   12   11
           inv. 180 deg rotation - cart. axis [0,1,0]             
 
    Cartesian axes
 
      site n.     atom                  positions (alat units)
-         1           Cr  tau(   1) = (   0.0000000   0.0000000   0.4846161  )
-         2           Cr  tau(   2) = (   0.0000000   0.5773503   0.4846161  )
-         3           I   tau(   3) = (  -0.1753225   0.8510331   0.7123856  )
-         4           I   tau(   4) = (   0.3246775   0.5923426   0.7123856  )
-         5           I   tau(   5) = (  -0.1493550   0.2886751   0.7123856  )
-         6           I   tau(   6) = (  -0.3246775   0.5923426   0.2568467  )
-         7           I   tau(   7) = (   0.1753225   0.8510331   0.2568467  )
-         8           I   tau(   8) = (   0.1493550   0.2886751   0.2568467  )
+         1           Cr  tau(   1) = (   0.5000000   0.2886751   0.0000000  )
+         2           Cr  tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+         3           I   tau(   3) = (   0.3246775   0.5623579   0.2277694  )
+         4           I   tau(   4) = (  -0.1753225   0.3036675   0.2277694  )
+         5           I   tau(   5) = (   0.3506450   0.0000000   0.2277694  )
+         6           I   tau(   6) = (   0.1753225   0.3036675  -0.2277694  )
+         7           I   tau(   7) = (   0.6493550   0.0000000  -0.2277694  )
+         8           I   tau(   8) = (  -0.3246775   0.5623579  -0.2277694  )
 
    Crystallographic axes
 
      site n.     atom                  positions (cryst. coord.)
-         1           Cr  tau(   1) = (  0.0000000  0.0000000  0.2515496  )
-         2           Cr  tau(   2) = (  0.3333333  0.6666667  0.2515496  )
-         3           I   tau(   3) = (  0.3160217  0.9826883  0.3697779  )
-         4           I   tau(   4) = (  0.6666667  0.6839783  0.3697779  )
-         5           I   tau(   5) = (  0.0173117  0.3333333  0.3697779  )
-         6           I   tau(   6) = (  0.0173117  0.6839783  0.1333214  )
-         7           I   tau(   7) = (  0.6666667  0.9826883  0.1333214  )
-         8           I   tau(   8) = (  0.3160217  0.3333333  0.1333214  )
+         1           Cr  tau(   1) = (  0.6666667  0.3333333  0.0000000  )
+         2           Cr  tau(   2) = (  0.3333333  0.6666667  0.0000000  )
+         3           I   tau(   3) = (  0.6493550  0.6493550  0.1182283  )
+         4           I   tau(   4) = (  0.0000000  0.3506450  0.1182283  )
+         5           I   tau(   5) = (  0.3506450  0.0000000  0.1182283  )
+         6           I   tau(   6) = (  0.3506450  0.3506450 -0.1182283  )
+         7           I   tau(   7) = (  0.6493550  0.0000000 -0.1182283  )
+         8           I   tau(   8) = (  0.0000000  0.6493550 -0.1182283  )
 
      number of k points=    10  Gaussian smearing, width (Ry)=  0.0050
                        cart. coord. in units 2pi/alat
@@ -295,10 +370,10 @@ E      2.00 -1.00  0.00
 
      starting charge      69.9974, renormalised to      70.0000
 
-     negative rho (up, down):  6.573E-08 1.269E-08
+     negative rho (up, down):  7.145E-08 1.358E-08
      Starting wfcs are   44 randomized atomic wfcs
 
-     total cpu time spent up to now is       12.7 secs
+     total cpu time spent up to now is        9.1 secs
 
      Self-consistent Calculation
 
@@ -306,23 +381,23 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           326 MiB given to the printing process from OS
+           333 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        119542 MiB available memory on the node where the printing process lives
+        155112 MiB available memory on the node where the printing process lives
 ------------------
      c_bands:  5 eigenvalues not converged
-     c_bands:  5 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
      c_bands:  5 eigenvalues not converged
      c_bands:  4 eigenvalues not converged
-     c_bands:  4 eigenvalues not converged
-     ethr =  5.00E-06,  avg # of iterations = 18.5
+     c_bands:  3 eigenvalues not converged
+     ethr =  5.00E-06,  avg # of iterations = 19.6
 
-     negative rho (up, down):  1.598E-08 9.463E-10
+     negative rho (up, down):  1.780E-08 1.072E-09
 
-     total cpu time spent up to now is      145.2 secs
+     total cpu time spent up to now is       96.3 secs
 
-     total energy              =    -511.37688903 Ry
-     estimated scf accuracy    <       4.55721631 Ry
+     total energy              =    -511.37687866 Ry
+     estimated scf accuracy    <       4.55721152 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =    10.88 Bohr mag/cell
@@ -331,34 +406,34 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           383 MiB given to the printing process from OS
+           395 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        117473 MiB available memory on the node where the printing process lives
+        154000 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  6.51E-03,  avg # of iterations =  5.8
+     ethr =  6.51E-03,  avg # of iterations =  6.0
 
-     total cpu time spent up to now is      192.9 secs
+     total cpu time spent up to now is      124.1 secs
 
-     total energy              =    -511.51168062 Ry
-     estimated scf accuracy    <       0.95482060 Ry
+     total energy              =    -511.50309393 Ry
+     estimated scf accuracy    <       0.97158062 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
-     absolute magnetization    =    10.66 Bohr mag/cell
+     absolute magnetization    =    10.61 Bohr mag/cell
 
      iteration #  3     ecut=   150.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           389 MiB given to the printing process from OS
+           402 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        117235 MiB available memory on the node where the printing process lives
+        153917 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  1.36E-03,  avg # of iterations =  7.2
+     ethr =  1.39E-03,  avg # of iterations =  7.6
 
-     total cpu time spent up to now is      252.2 secs
+     total cpu time spent up to now is      179.4 secs
 
-     total energy              =    -511.48007637 Ry
-     estimated scf accuracy    <       5.92047671 Ry
+     total energy              =    -511.47243718 Ry
+     estimated scf accuracy    <       6.04365591 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     6.39 Bohr mag/cell
@@ -367,16 +442,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           396 MiB given to the printing process from OS
+           407 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        117049 MiB available memory on the node where the printing process lives
+        149292 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  1.36E-03,  avg # of iterations =  8.0
+     ethr =  1.39E-03,  avg # of iterations =  7.8
 
-     total cpu time spent up to now is      313.2 secs
+     total cpu time spent up to now is      249.6 secs
 
-     total energy              =    -512.05977456 Ry
-     estimated scf accuracy    <       0.09288223 Ry
+     total energy              =    -512.05724208 Ry
+     estimated scf accuracy    <       0.10245799 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.55 Bohr mag/cell
@@ -385,34 +460,34 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           401 MiB given to the printing process from OS
+           413 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        115752 MiB available memory on the node where the printing process lives
+        147824 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  1.33E-04,  avg # of iterations =  6.3
+     ethr =  1.46E-04,  avg # of iterations =  6.8
 
-     total cpu time spent up to now is      365.1 secs
+     total cpu time spent up to now is      309.8 secs
 
-     total energy              =    -512.08646089 Ry
-     estimated scf accuracy    <       0.00447729 Ry
+     total energy              =    -512.08649169 Ry
+     estimated scf accuracy    <       0.00446389 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
-     absolute magnetization    =     7.51 Bohr mag/cell
+     absolute magnetization    =     7.50 Bohr mag/cell
 
      iteration #  6     ecut=   150.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           406 MiB given to the printing process from OS
+           418 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114514 MiB available memory on the node where the printing process lives
+        147716 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  6.40E-06,  avg # of iterations =  3.8
+     ethr =  6.38E-06,  avg # of iterations =  4.0
 
-     total cpu time spent up to now is      407.7 secs
+     total cpu time spent up to now is      358.5 secs
 
-     total energy              =    -512.08828419 Ry
-     estimated scf accuracy    <       0.00134305 Ry
+     total energy              =    -512.08829529 Ry
+     estimated scf accuracy    <       0.00129941 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.34 Bohr mag/cell
@@ -421,16 +496,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           411 MiB given to the printing process from OS
+           423 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114350 MiB available memory on the node where the printing process lives
+        149163 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  1.92E-06,  avg # of iterations =  3.0
+     ethr =  1.86E-06,  avg # of iterations =  2.9
 
-     total cpu time spent up to now is      452.2 secs
+     total cpu time spent up to now is      407.3 secs
 
-     total energy              =    -512.08866384 Ry
-     estimated scf accuracy    <       0.00027993 Ry
+     total energy              =    -512.08878644 Ry
+     estimated scf accuracy    <       0.00011368 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.16 Bohr mag/cell
@@ -439,34 +514,34 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           416 MiB given to the printing process from OS
+           427 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114210 MiB available memory on the node where the printing process lives
+        149017 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  4.00E-07,  avg # of iterations =  3.5
+     ethr =  1.62E-07,  avg # of iterations =  4.0
 
-     total cpu time spent up to now is      500.1 secs
+     total cpu time spent up to now is      462.1 secs
 
-     total energy              =    -512.08869255 Ry
-     estimated scf accuracy    <       0.00067898 Ry
+     total energy              =    -512.08881063 Ry
+     estimated scf accuracy    <       0.00001516 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
-     absolute magnetization    =     7.14 Bohr mag/cell
+     absolute magnetization    =     7.13 Bohr mag/cell
 
      iteration #  9     ecut=   150.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           421 MiB given to the printing process from OS
+           433 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114143 MiB available memory on the node where the printing process lives
+        148874 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  4.00E-07,  avg # of iterations =  2.0
+     ethr =  2.17E-08,  avg # of iterations =  3.4
 
-     total cpu time spent up to now is      542.1 secs
+     total cpu time spent up to now is      514.1 secs
 
-     total energy              =    -512.08880946 Ry
-     estimated scf accuracy    <       0.00001320 Ry
+     total energy              =    -512.08881462 Ry
+     estimated scf accuracy    <       0.00000295 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -475,16 +550,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           426 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114089 MiB available memory on the node where the printing process lives
+        148778 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  1.89E-08,  avg # of iterations =  3.9
+     ethr =  4.21E-09,  avg # of iterations =  2.0
 
-     total cpu time spent up to now is      589.9 secs
+     total cpu time spent up to now is      558.2 secs
 
-     total energy              =    -512.08881282 Ry
-     estimated scf accuracy    <       0.00000394 Ry
+     total energy              =    -512.08881478 Ry
+     estimated scf accuracy    <       0.00000052 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -493,16 +568,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           426 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114075 MiB available memory on the node where the printing process lives
+        148774 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  5.64E-09,  avg # of iterations =  1.6
+     ethr =  7.37E-10,  avg # of iterations =  3.8
 
-     total cpu time spent up to now is      625.6 secs
+     total cpu time spent up to now is      612.4 secs
 
-     total energy              =    -512.08881310 Ry
-     estimated scf accuracy    <       0.00000042 Ry
+     total energy              =    -512.08881493 Ry
+     estimated scf accuracy    <       0.00000004 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -511,16 +586,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           426 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        114205 MiB available memory on the node where the printing process lives
+        148768 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  5.98E-10,  avg # of iterations =  3.5
+     ethr =  5.17E-11,  avg # of iterations =  3.1
 
-     total cpu time spent up to now is      670.8 secs
+     total cpu time spent up to now is      662.5 secs
 
-     total energy              =    -512.08881318 Ry
-     estimated scf accuracy    <          6.2E-09 Ry
+     total energy              =    -512.08881494 Ry
+     estimated scf accuracy    <          1.0E-09 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -529,16 +604,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           426 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        113965 MiB available memory on the node where the printing process lives
+        148334 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  8.92E-12,  avg # of iterations =  5.2
+     ethr =  1.47E-12,  avg # of iterations =  5.2
 
-     total cpu time spent up to now is      720.2 secs
+     total cpu time spent up to now is      724.8 secs
 
-     total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          7.3E-09 Ry
+     total energy              =    -512.08881494 Ry
+     estimated scf accuracy    <          3.5E-10 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -547,16 +622,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           426 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        116237 MiB available memory on the node where the printing process lives
+        150615 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  8.92E-12,  avg # of iterations =  2.0
+     ethr =  5.06E-13,  avg # of iterations =  2.9
 
-     total cpu time spent up to now is      742.1 secs
+     total cpu time spent up to now is      776.8 secs
 
-     total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          3.4E-10 Ry
+     total energy              =    -512.08881494 Ry
+     estimated scf accuracy    <          7.0E-12 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -565,16 +640,16 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           427 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        116233 MiB available memory on the node where the printing process lives
+        151189 MiB available memory on the node where the printing process lives
 ------------------
-     ethr =  4.81E-13,  avg # of iterations =  4.3
+     ethr =  1.00E-13,  avg # of iterations =  1.9
 
-     total cpu time spent up to now is      771.5 secs
+     total cpu time spent up to now is      816.9 secs
 
-     total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          4.1E-11 Ry
+     total energy              =    -512.08881494 Ry
+     estimated scf accuracy    <          4.4E-13 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
@@ -583,51 +658,15 @@ E      2.00 -1.00  0.00
      Davidson diagonalization with overlap
 
 ---- Real-time Memory Report at c_bands before calling an iterative solver
-           427 MiB given to the printing process from OS
+           438 MiB given to the printing process from OS
              0 MiB allocation reported by mallinfo(arena+hblkhd)
-        116206 MiB available memory on the node where the printing process lives
-------------------
-     ethr =  1.00E-13,  avg # of iterations =  2.2
-
-     total cpu time spent up to now is      794.7 secs
-
-     total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          1.8E-11 Ry
-
-     total magnetization       =     6.00 Bohr mag/cell
-     absolute magnetization    =     7.13 Bohr mag/cell
-
-     iteration # 17     ecut=   150.00 Ry     beta= 0.70
-     Davidson diagonalization with overlap
-
----- Real-time Memory Report at c_bands before calling an iterative solver
-           427 MiB given to the printing process from OS
-             0 MiB allocation reported by mallinfo(arena+hblkhd)
-        118025 MiB available memory on the node where the printing process lives
-------------------
-     ethr =  1.00E-13,  avg # of iterations =  1.4
-
-     total cpu time spent up to now is      814.4 secs
-
-     total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          8.2E-13 Ry
-
-     total magnetization       =     6.00 Bohr mag/cell
-     absolute magnetization    =     7.13 Bohr mag/cell
-
-     iteration # 18     ecut=   150.00 Ry     beta= 0.70
-     Davidson diagonalization with overlap
-
----- Real-time Memory Report at c_bands before calling an iterative solver
-           427 MiB given to the printing process from OS
-             0 MiB allocation reported by mallinfo(arena+hblkhd)
-        115063 MiB available memory on the node where the printing process lives
+        150499 MiB available memory on the node where the printing process lives
 ------------------
      ethr =  1.00E-13,  avg # of iterations =  1.0
  
      Magnetic moment per site  (integrated on atomic sphere of radius R)
-     atom   1 (R=0.164)  charge= 12.4364  magn=  2.9402
-     atom   2 (R=0.164)  charge= 12.4364  magn=  2.9402
+     atom   1 (R=0.164)  charge= 12.4364  magn=  2.9401
+     atom   2 (R=0.164)  charge= 12.4364  magn=  2.9401
      atom   3 (R=0.164)  charge=  4.1209  magn= -0.0522
      atom   4 (R=0.164)  charge=  4.1209  magn= -0.0522
      atom   5 (R=0.164)  charge=  4.1209  magn= -0.0522
@@ -635,7 +674,7 @@ E      2.00 -1.00  0.00
      atom   7 (R=0.164)  charge=  4.1209  magn= -0.0522
      atom   8 (R=0.164)  charge=  4.1209  magn= -0.0522
 
-     total cpu time spent up to now is      833.3 secs
+     total cpu time spent up to now is      852.4 secs
 
      End of self-consistent calculation
 
@@ -782,8 +821,8 @@ E      2.00 -1.00  0.00
 
    -77.4062 -77.4061 -49.1402 -49.1398 -49.1313 -49.1301 -49.1290 -49.1278
    -18.1400 -17.8078 -17.6079 -17.5581 -17.4292 -17.3899  -9.8881  -9.5743
-    -9.1535  -9.1286  -8.8432  -8.7768  -8.5625  -8.3169  -8.1947  -7.8951
-    -7.7507  -7.4259  -7.2692  -7.0012  -6.9500  -6.8914  -6.6514  -6.5202
+    -9.1535  -9.1286  -8.8431  -8.7768  -8.5625  -8.3169  -8.1947  -7.8951
+    -7.7506  -7.4259  -7.2692  -7.0012  -6.9500  -6.8914  -6.6514  -6.5202
     -6.2318  -6.0324  -5.8809  -5.8715  -5.8012  -5.6059  -4.3879  -4.3729
     -4.2596  -4.1215
 
@@ -885,7 +924,7 @@ E      2.00 -1.00  0.00
 
           k = 0.0000-0.5774 0.0000 (113154 PWs)   bands (ev):
 
-   -74.4671 -74.4670 -46.2195 -46.2190 -46.1903 -46.1890 -46.1872 -46.1860
+   -74.4671 -74.4670 -46.2195 -46.2190 -46.1903 -46.1891 -46.1872 -46.1860
    -18.1033 -17.8917 -17.5551 -17.5543 -17.4890 -17.4016  -9.8674  -9.2070
     -9.1679  -8.6302  -8.5114  -8.4955  -8.1546  -7.8594  -7.6660  -7.4802
     -7.4795  -7.3133  -7.0123  -6.7848  -6.7390  -6.5518  -6.3411  -5.9989
@@ -970,7 +1009,7 @@ E      2.00 -1.00  0.00
 
           k = 0.2500 0.5774 0.0000 (113128 PWs)   bands (ev):
 
-   -74.4671 -74.4670 -46.2193 -46.2191 -46.1904 -46.1885 -46.1878 -46.1858
+   -74.4671 -74.4670 -46.2193 -46.2192 -46.1904 -46.1885 -46.1878 -46.1858
    -18.0212 -17.9120 -17.6519 -17.5225 -17.4859 -17.4163  -9.5856  -9.3402
     -8.9952  -8.8165  -8.7663  -8.4165  -8.2236  -8.1362  -7.6433  -7.6312
     -7.1558  -7.1048  -6.9599  -6.7024  -6.6151  -6.5815  -6.2715  -6.1996
@@ -987,81 +1026,81 @@ E      2.00 -1.00  0.00
 
      the Fermi energy is    -4.9348 ev
 
-!    total energy              =    -512.08881319 Ry
-     estimated scf accuracy    <          5.5E-14 Ry
+!    total energy              =    -512.08881494 Ry
+     estimated scf accuracy    <          1.7E-14 Ry
      smearing contrib. (-TS)   =      -0.00000000 Ry
-     internal energy E=F+TS    =    -512.08881319 Ry
+     internal energy E=F+TS    =    -512.08881494 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =   -1703.12274059 Ry
-     hartree contribution      =     845.80956686 Ry
-     xc contribution           =     -99.95672986 Ry
-     ewald contribution        =     445.18109040 Ry
+     one-electron contribution =   -1703.12273800 Ry
+     hartree contribution      =     845.80956360 Ry
+     xc contribution           =     -99.95673129 Ry
+     ewald contribution        =     445.18109075 Ry
 
      total magnetization       =     6.00 Bohr mag/cell
      absolute magnetization    =     7.13 Bohr mag/cell
 
-     convergence has been achieved in  18 iterations
+     convergence has been achieved in  16 iterations
 
      Writing all to output data dir ./cri3_150Ry_k8x8x1.save/
  
-     init_run     :     12.07s CPU     12.56s WALL (       1 calls)
-     electrons    :    809.71s CPU    820.86s WALL (       1 calls)
+     init_run     :      8.61s CPU      8.95s WALL (       1 calls)
+     electrons    :    832.43s CPU    843.74s WALL (       1 calls)
 
      Called by init_run:
-     wfcinit      :     10.42s CPU     10.80s WALL (       1 calls)
-     wfcinit:atom :      0.15s CPU      0.21s WALL (      20 calls)
-     wfcinit:wfcr :      9.64s CPU      9.87s WALL (      20 calls)
-     potinit      :      0.47s CPU      0.49s WALL (       1 calls)
-     hinit0       :      0.77s CPU      0.82s WALL (       1 calls)
+     wfcinit      :      7.07s CPU      7.34s WALL (       1 calls)
+     wfcinit:atom :      0.12s CPU      0.16s WALL (      20 calls)
+     wfcinit:wfcr :      6.40s CPU      6.55s WALL (      20 calls)
+     potinit      :      0.45s CPU      0.46s WALL (       1 calls)
+     hinit0       :      0.76s CPU      0.79s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    706.99s CPU    716.58s WALL (      18 calls)
-     sum_band     :     98.55s CPU     99.84s WALL (      18 calls)
-     v_of_rho     :      1.02s CPU      1.04s WALL (      19 calls)
-     v_h          :      0.35s CPU      0.36s WALL (      19 calls)
-     v_xc         :      0.67s CPU      0.68s WALL (      19 calls)
-     mix_rho      :      2.84s CPU      2.94s WALL (      18 calls)
+     c_bands      :    715.54s CPU    725.01s WALL (      16 calls)
+     sum_band     :    112.01s CPU    113.48s WALL (      16 calls)
+     v_of_rho     :      1.04s CPU      1.05s WALL (      17 calls)
+     v_h          :      0.39s CPU      0.39s WALL (      17 calls)
+     v_xc         :      0.65s CPU      0.66s WALL (      17 calls)
+     mix_rho      :      3.44s CPU      3.49s WALL (      16 calls)
 
      Called by c_bands:
-     init_us_2    :     10.18s CPU     10.25s WALL (     740 calls)
-     init_us_2:cp :     10.17s CPU     10.24s WALL (     740 calls)
-     cegterg      :    656.74s CPU    666.12s WALL (     365 calls)
+     init_us_2    :     11.08s CPU     11.17s WALL (     660 calls)
+     init_us_2:cp :     11.08s CPU     11.16s WALL (     660 calls)
+     cegterg      :    668.18s CPU    677.42s WALL (     326 calls)
 
      Called by sum_band:
-     sum_band:wei :      0.01s CPU      0.00s WALL (      18 calls)
-     sum_band:loo :     97.18s CPU     98.44s WALL (      18 calls)
-     sum_band:buf :      1.86s CPU      1.87s WALL (     360 calls)
-     sum_band:ini :      4.97s CPU      5.00s WALL (     360 calls)
+     sum_band:wei :      0.00s CPU      0.00s WALL (      16 calls)
+     sum_band:loo :    110.45s CPU    111.90s WALL (      16 calls)
+     sum_band:buf :      2.11s CPU      2.13s WALL (     320 calls)
+     sum_band:ini :      5.56s CPU      5.60s WALL (     320 calls)
 
      Called by *egterg:
-     cdiaghg      :      6.06s CPU      6.76s WALL (    2024 calls)
-     cegterg:over :     27.43s CPU     27.70s WALL (    1664 calls)
-     cegterg:upda :     46.29s CPU     46.73s WALL (    1664 calls)
-     cegterg:last :     50.21s CPU     50.50s WALL (     963 calls)
-     cdiaghg:chol :      0.49s CPU      0.50s WALL (    2024 calls)
-     cdiaghg:inve :      0.29s CPU      0.30s WALL (    2024 calls)
-     cdiaghg:para :      0.41s CPU      0.43s WALL (    4048 calls)
-     h_psi        :    522.68s CPU    530.34s WALL (    2049 calls)
-     g_psi        :      2.42s CPU      2.44s WALL (    1664 calls)
+     cdiaghg      :      6.06s CPU      6.93s WALL (    1958 calls)
+     cegterg:over :     29.48s CPU     29.87s WALL (    1638 calls)
+     cegterg:upda :     52.52s CPU     52.97s WALL (    1638 calls)
+     cegterg:last :     52.73s CPU     53.04s WALL (     872 calls)
+     cdiaghg:chol :      0.56s CPU      0.57s WALL (    1958 calls)
+     cdiaghg:inve :      0.31s CPU      0.32s WALL (    1958 calls)
+     cdiaghg:para :      0.42s CPU      0.44s WALL (    3916 calls)
+     h_psi        :    519.45s CPU    526.58s WALL (    1984 calls)
+     g_psi        :      2.41s CPU      2.45s WALL (    1638 calls)
 
      Called by h_psi:
-     h_psi:calbec :     25.51s CPU     25.72s WALL (    2049 calls)
-     vloc_psi     :    459.50s CPU    466.54s WALL (    2049 calls)
-     add_vuspsi   :     32.27s CPU     32.41s WALL (    2049 calls)
+     h_psi:calbec :     26.69s CPU     26.90s WALL (    1984 calls)
+     vloc_psi     :    451.55s CPU    458.12s WALL (    1984 calls)
+     add_vuspsi   :     35.49s CPU     35.65s WALL (    1984 calls)
 
      General routines
-     calbec       :     25.50s CPU     25.72s WALL (    2049 calls)
-     fft          :      0.95s CPU      1.01s WALL (      93 calls)
-     ffts         :      0.33s CPU      0.34s WALL (      36 calls)
-     fftw         :    380.30s CPU    386.16s WALL (  112042 calls)
+     calbec       :     26.68s CPU     26.90s WALL (    1984 calls)
+     fft          :      1.07s CPU      1.10s WALL (      83 calls)
+     ffts         :      0.40s CPU      0.41s WALL (      32 calls)
+     fftw         :    380.77s CPU    386.45s WALL (  101834 calls)
  
      Parallel routines
  
-     PWSCF        :  13m42.63s CPU  14m 1.53s WALL
+     PWSCF        :  14m 2.26s CPU  14m23.14s WALL
 
  
-   This run was terminated on:  15:29:57  18Jan2024            
+   This run was terminated on:  11:13:24  19Jan2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

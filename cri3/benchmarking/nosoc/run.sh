@@ -9,4 +9,4 @@
 module purge
 module load qe/7.0-intelmpi
 
-srun --mpi=pmi2 pw.x -inp cri3-exp-nosoc_90Ry_k6x6x1.scf.in | tee scf-nosoc_90Ry_k6x6x1.log
+srun --mpi=pmi2 pw.x -inp cri3-exp-nosoc_150Ry_k8x8x1.scf.in | tee scf-nosoc_150Ry_k8x8x1.log
