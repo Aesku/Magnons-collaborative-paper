@@ -7,3 +7,5 @@
  with .sh scripts
 *.save
  Charge densities
+*dat
+ Total energy outputs for different ecutwfc and k-points
